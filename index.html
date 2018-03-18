@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Tetris</title>
+  <style>
+    body {
+      background-color: grey;
+    }
+    
+    #canvas {
+      margin: 0 auto;
+      display: block;
+      z-index: 1;
+    }
+    
+    #oldPieces {
+      display: block;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: 1;
+    }
+    
+    #background {
+      height: 500px;
+      width: 500px;
+      background-color: white;
+      display: block;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      left: 50%;
+      border: #b5aaff 2px solid;
+      z-index: -1;
+    }
+    
+    #keys {
+      background-color: white;
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px 20px;
+      border-radius: 10px;
+      border: #b5aaff 2px solid;
+    }
+    
+  </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <canvas id="oldPieces"></canvas>
+    <div id="background"></div>
+    <div id="keys">
+      <h3> Keys </h3>
+      <p><b>Enter</b> => stop the game</p>
+      <p><b>A</b> or <b>left arrow</b> => move left</p>
+      <p><b>D</b> or <b>right arrow</b> => move right</p>
+      <p><b>S</b> or <b>down arrow</b> => rotate Counter Clockwise</p>
+      <p><b>W</b> or <b>up arrow</b> => rotate Clockwise</p>
+    </div>
+    <script type"javascript" src="main.js"></script>
+ </body>
+</html>
